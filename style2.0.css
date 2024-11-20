@@ -1,0 +1,323 @@
+/* Style global */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(32, 37, 40); /* Fond sombre élégant */
+    font-family: Arial, sans-serif; /* Police propre et lisible */
+    color: white; /* Texte par défaut blanc pour le contraste */
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    font-size: 24px; /* Taille ajustée pour une meilleure lisibilité */
+    padding: 10px 0; /* Espace autour du texte */
+    background-color: rgb(20, 25, 28); /* Fond pour démarquer la navigation */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1); /* Ligne discrète */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Centre les éléments dans la navigation */
+    align-items: center; /* Aligne les éléments verticalement */
+    gap: 30px; /* Ajoute un espace uniforme entre les éléments */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Supprime les puces des listes */
+}
+
+nav li {
+    display: inline-block; /* Assure une disposition alignée des éléments */
+}
+
+nav a {
+    color: rgba(245, 238, 238, 0.9); /* Texte légèrement transparent */
+    text-decoration: none; /* Supprime le soulignement */
+    padding: 5px 10px; /* Ajoute un espace intérieur pour uniformiser le clic */
+    transition: color 0.3s ease; /* Effet fluide sur le hover */
+}
+
+nav a:hover {
+    color: #4CAF50; /* Change la couleur au survol */
+}
+
+/* Image */
+.image {
+    width: 100%; /* Image qui s'ajuste à la largeur de l'écran */
+    display: block;
+}
+
+/* Accueil */
+.accueil {
+    text-align: center;
+    font-size: 2.5em; /* Taille plus adaptée à un titre principal */
+    margin: 20px 0; /* Ajoute de l'espace en haut et en bas */
+}
+
+/* Parcours */
+.parcours {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    justify-content: space-evenly; /* Répartit uniformément les éléments */
+    gap: 20px; /* Espacement entre les blocs */
+    text-align: center;
+    padding: 20px;
+}
+
+.parcoursgauche, .parcoursimage {
+    width: 45%; /* Chaque bloc prend environ la moitié de la largeur */
+    box-sizing: border-box; /* Assure que les marges sont incluses dans la taille */
+    background-color: rgba(255, 255, 255, 0.1); /* Fond blanc transparent */
+    padding: 15px;
+    border-radius: 10px; /* Arrondit les coins */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre légère */
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+
+.parcoursgauche:hover, .parcoursimage:hover {
+    transform: scale(1.05); /* Agrandit légèrement au survol */
+    background-color: rgba(255, 255, 255, 0.2); /* Accentue le fond */
+}
+
+/* Fin du style */
+
+/* Début Études */
+.etudes {
+    background-image: url("image/marseillepaysage.jpg");
+    background-size: cover; /* Ajuste l'image pour couvrir toute la section */
+    background-position: center;
+    padding: 5% 0;
+    color: white;
+}
+
+.titreetudes {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.etudes h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Conteneur des blocs d'écoles */
+.etudesecole {
+    display: flex;
+    flex-wrap: wrap; /* Permet d'adapter les blocs sur plusieurs lignes si nécessaire */
+    justify-content: center; /* Centre les blocs horizontalement */
+    gap: 2%; /* Espacement entre les blocs */
+    margin-top: 3%;
+}
+
+/* Style des blocs individuels */
+.ecole {
+    width: 300px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc avec un peu de transparence */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet "carte" */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation au survol */
+.ecole:hover {
+    transform: translateY(-10px); /* Soulève légèrement la carte */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Image dans les blocs */
+.ecole img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 50%; /* Rend l'image ronde */
+    border: 2px solid #4CAF50; /* Bordure verte élégante */
+}
+
+/* Texte des blocs */
+.ecole h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ecole p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Fin Études */
+
+
+/* Début Expériences */
+.experiences {
+   background-image: url("image/marseillepaysage.jpg");
+    background-size: cover; /* Ajuste l'image pour couvrir toute la section */
+    background-position: center;
+    padding: 5% 0;
+    color: white;
+}
+
+.titreexperiences {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.experiences h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Conteneur des blocs d'expériences */
+.expcadre {
+    display: flex;
+    flex-wrap: wrap; /* Permet d'adapter les blocs sur plusieurs lignes si nécessaire */
+    justify-content: center; /* Centre les blocs horizontalement */
+    gap: 2%; /* Espacement entre les blocs */
+    margin-top: 3%;
+}
+
+/* Style des blocs individuels */
+.experiencesuniv {
+    width: 300px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc avec un peu de transparence */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet "carte" */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation au survol */
+.experiencesuniv:hover {
+    transform: translateY(-10px); /* Soulève légèrement la carte */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Image dans les blocs */
+.experiencesuniv img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 50%; /* Rend l'image ronde */
+    border: 2px solid #ff9800; /* Bordure orange élégante */
+}
+
+/* Texte des blocs */
+.experiencesuniv h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.experiencesuniv p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Fin Expériences */
+
+/*debut contact*/
+
+/* Style global */
+.contact{
+    background-image: url("");
+    padding-bottom: 10%; /*cree en dessous du dernier bloc */
+}
+.contact-form {
+    
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form fieldset {
+    border: none;
+    padding: 0;
+}
+
+.contact-form legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.form-actions {
+    text-align: right;
+}
+
+.buttoncontact {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.buttoncontact:hover {
+    background-color: #45a049;
+}
+
+
+.contact{
+ 
+    color: white;
+
+}
+.mail:hover{ /*permet de changer laspect des element au survol*/
+    height: 40%;
+    color: rgb(113, 237, 136);
+    font-weight: bold;
+}
+/*fin contact*/
